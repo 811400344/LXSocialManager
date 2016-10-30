@@ -1,27 +1,31 @@
-# LXSocialManager
-LXSocialManager is a opensource Social SDK for iOS.
+LXSocialManager
+==============
 
+**LXSocialManager is a opensource Social SDK for iOS.**  
 
-Requirements
+## Requirements
     - iOS 8.0+
     - Xcode 8.1
 
 
-Installation
+## Installation
 
-CocoaPods
+#### CocoaPods
+    # To integrate LXSocialManager into your Xcode project using CocoaPods, specify it in your Podfile:
+
     pod 'LXSocialManager', '~> 1.0.0'
 
-Carthage
-    import "LXSocialManager.h"
+    # Then, run the following command:
+    $ pod install
 
+#### Carthage
+    1. Import <\"LXSocialManager.h"\>.
 
-Usage example
+## Usage example
 
-Objective-C
-
+#### Objective-C
+```objc
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
     [LXSocialManager setWXAppId:@"key" appSecret:@"secret" state:@"state"];
     return YES;
 }
@@ -42,7 +46,7 @@ if ([LXSocialManager isAppInstalled:LXSocialWX]) {
 
     }];
 }
+```
 
-
-License
-    LXSocialManager is released under the MIT license. See LICENSE for details.
+## License
+    **LXSocialManager is released under the MIT license. See LICENSE for details.**
