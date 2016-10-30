@@ -8,11 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-#define WX_APPKEY        @"wx5c03dcf8a88d375a"
-#define WX_SECRET        @"a30678e56d9f5ca3d187b963084e3d56"
-#define WX_SCOPE         @"snsapi_userinfo"
-#define WX_STATE         @"lixiang"
-
 typedef NS_OPTIONS (NSInteger, LXSocialType) {
     LXSocialWX = 1 << 0,
     LXSocialWB = 1 << 1,
@@ -28,10 +23,10 @@ typedef void (^LXSocialLoginSuccess)(NSString *openID, NSString *unionID, NSStri
 typedef void (^LXSocialLoginError)(NSError *error);
 
 /** 注册 */
-+ (void)registerApp;
++ (void)setWXAppId:(NSString *)app_Id appSecret:(NSString *)appSecret state:(NSString *)state;
 
 /** 注册 */
-+ (void)registerAppAdditional:(NSString *)additional;
++ (void)setWXAppId:(NSString *)app_Id appSecret:(NSString *)appSecret state:(NSString *)state appdesc:(NSString *)appdesc;
 
 /** 是否安装了客户端 */
 + (BOOL)isAppInstalled:(LXSocialType)thirdSocialType;
