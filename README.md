@@ -13,7 +13,7 @@ LXSocialManager
 #### CocoaPods
     # To integrate LXSocialManager into your Xcode project using CocoaPods, specify it in your Podfile:
 
-    pod 'LXSocialManager', '~> 1.0.1'
+    pod 'LXSocialManager', '~> 1.0.3'
 
     # Then, run the following command:
     $ pod install
@@ -23,7 +23,7 @@ LXSocialManager
 
 #### Manually
 
-    1. Download all the files in the `LFLiveKit` subdirectory.
+    1. Download all the files in the `LXSocialManager` subdirectory.
     2. Add the source files to your Xcode project.
     3. Link with required frameworks:
     
