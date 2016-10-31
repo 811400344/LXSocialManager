@@ -19,7 +19,7 @@ typedef NS_OPTIONS (NSInteger, LXSocialType) {
 typedef void (^LXSocialAuthSuccess)(NSString *openID, NSString *unionID);
 typedef void (^LXSocialAuthError)(NSError *error);
 
-typedef void (^LXSocialLoginSuccess)(NSString *openID, NSString *unionID, NSString *userNickname, NSString *userAvatarURL);
+typedef void (^LXSocialLoginSuccess)(NSString *openID, NSString *unionID, NSString *userNickname, NSString *userAvatarURL, NSString *sex, NSString *token);
 typedef void (^LXSocialLoginError)(NSError *error);
 
 /** 注册 */

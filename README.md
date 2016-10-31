@@ -21,6 +21,35 @@ LXSocialManager
 #### Carthage
     1. Import <\"LXSocialManager.h"\>.
 
+#### Manually
+
+    1. Download all the files in the `LFLiveKit` subdirectory.
+    2. Add the source files to your Xcode project.
+    3. Link with required frameworks:
+    
+    1. WeiXin
+    * SystemConfiguration.framework
+    * libz.dylib
+    * libsqlite3.0.dylib
+    * libc++.dylib
+    * Security.framework
+    * CoreTelephony.framework
+    * CFNetwork.framework
+    
+    * Not Cocoapods : Other Linker Flags : -Objc -all_load
+
+    2. QQ
+    * Security.framework
+    * libiconv.dylib
+    * SystemConfiguration.framework
+    * CoreGraphics.Framework
+    * libsqlite3.dylib
+    * CoreTelephony.framework
+    * libstdc++.dylib
+    * libz.dylib
+
+    * Not Cocoapods : Other Linker Flags : -fobjc-arc
+
 ## Usage example
 
 #### Objective-C
