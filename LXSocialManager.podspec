@@ -24,7 +24,7 @@ Pod::Spec.new do |s|
   #   'LIBRARY_SEARCH_PATHS' => '"$(PODS_ROOT)/LXSocialManager"',
   #   'HEADER_SEARCH_PATHS' => '"$(PODS_ROOT)/LXSocialManager"'
   # }
-  s.frameworks  = 'SystemConfiguration', 'CoreTelephony',"Foundation","UIKit"
+  s.frameworks  = 'SystemConfiguration', 'CoreTelephony'
   s.libraries   = 'z', 'sqlite3.0', 'c++'
 
 end
