@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name              = "LXSocialManager"
-  s.version           = "1.0.5"
+  s.version           = "1.0.6"
   s.license           = { :type => "MIT", :file => "LICENSE" }
   s.summary           = "LXSocialManager for Cocoapods convenience."
   s.description  = <<-DESC
@@ -19,12 +19,12 @@ Pod::Spec.new do |s|
   # s.vendored_libraries = "LXSocialManager.a"
   s.vendored_libraries  = ['LXSocialManager/lib/libLXSocialManager.a']
   # s.vendored_frameworks = "LXSocialManager.framework"
-  # s.xcconfig          = {'OTHER_LDFLAGS' => '-ObjC'}
-  s.xcconfig = {
-    'LIBRARY_SEARCH_PATHS' => '"$(PODS_ROOT)/LXSocialManager"',
-    'HEADER_SEARCH_PATHS' => '"$(PODS_ROOT)/LXSocialManager"'
-  }
-  s.frameworks  = 'SystemConfiguration', 'CoreTelephony'
+  s.xcconfig          = {'OTHER_LDFLAGS' => '-ObjC'}
+  # s.xcconfig = {
+  #   'LIBRARY_SEARCH_PATHS' => '"$(PODS_ROOT)/LXSocialManager"',
+  #   'HEADER_SEARCH_PATHS' => '"$(PODS_ROOT)/LXSocialManager"'
+  # }
+  s.frameworks  = 'SystemConfiguration', 'CoreTelephony',"Foundation","UIKit"
   s.libraries   = 'z', 'sqlite3.0', 'c++'
 
 end
